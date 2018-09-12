@@ -10,49 +10,52 @@ Minesweeper Implementation
 */
 #include <iostream>
 #include <ctime>
-#include <srand>
 using namespace std;
 
 //Board Size: Medium = 16x16
-const int BSIZE = 16;
+const int BSIZE = 17;
 //Number of Bombs: Meduim = 40
 const int NBOMBS = 40;
 
-struct Board
-{
-    char mediumBoard[16][16];
-};
-
-void createBoard(Board b);
-void addBombs(Board b);
-void addNumbers(Board b);
+void createBoard(char b[][BSIZE]);
+void addBombs(char b[][BSIZE]);
+void addNumbers(char b[][BSIZE]);
 
 int main()
 {
+  char mediumBoard[17][17];
+  createBoard(mediumBoard);
 
   return 0;
 }
 
-void createBoard(Board b)
+void createBoard(char b[][BSIZE])
 {
+  for(int x = 0; x <= BSIZE; x++)
+  {
+    for(int y = 0; y <= BSIZE; y++)
+    {
+      if(x == 0 || y == 0 || x == 17 || y == 17) b[x][y] = '#';
+    }
+  }
   addBombs(b);
   addNumbers(b);
 }
 
-void addBombs(Board b)
+void addBombs(char b[][BSIZE])
 {
 
 }
 
-void addNumbers(Board b)
+void addNumbers(char b[][BSIZE])
 {
   int numBombs = 0;
-  for(int x = 0; x < BSIZE; x++)
+  for(int x = 1; x < BSIZE; x++)
   {
-    for(int y = 0; y < BSIZE; y++)
+    for(int y = 1; y < BSIZE; y++)
     {
       //sets the number of surrounding bombs to 0 for each square
-      numBombs = 0
+      numBombs = 0;
       //If current square is a Bomb, Don't Do Anything
       if(b[x][y] == 'b');
       else
