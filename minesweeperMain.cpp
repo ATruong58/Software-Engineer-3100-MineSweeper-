@@ -65,7 +65,7 @@ void addNumbers(char b[][BSIZE])
         if(b[x][y - 1] == 'b') numBombs ++;//Left Neighbor
         if(b[x - 1][y + 1] == 'b') numBombs ++;//Bottom Left Neighbor
         if(b[x][y - 1] == 'b') numBombs ++;//Top Neighbor
-        if(b[x][y + 1] == 'b') numBombs ++;//Botom Neighbor
+        if(b[x][y + 1] == 'b') numBombs ++;//Bottom Neighbor
         if(b[x + 1][y - 1] == 'b') numBombs ++;//Top Right Neighbor
         if(b[x + 1][y] == 'b') numBombs ++;//Right Neighbor
         if(b[x + 1][y + 1] == 'b') numBombs ++;//Bottom Right Neighbor
