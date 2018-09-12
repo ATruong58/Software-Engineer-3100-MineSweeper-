@@ -25,7 +25,7 @@ int main()
 {
   char mediumBoard[17][17];
   createBoard(mediumBoard);
-
+  cout << "Error?" << endl;
   return 0;
 }
 
