@@ -74,7 +74,25 @@ void addNumbers(char b[BSIZE][BSIZE])
         //Sets the current Square Equal to the number of bombs around it
         switch(numBombs)
         {
-          case 0: b[x][y] = '-';
+          case 0: b[x][y] = 'O';
+                  break;
+          case 1: b[x][y] = '1';
+                  break;
+          case 2: b[x][y] = '2';
+                  break;
+          case 3: b[x][y] = '3';
+                  break;
+          case 4: b[x][y] = '4';
+                  break;
+          case 5: b[x][y] = '5';
+                  break;
+          case 6: b[x][y] = '6';
+                  break;
+          case 7: b[x][y] = '7';
+                  break;
+          case 8: b[x][y] = '8';
+                  break;
+          case 9: b[x][y] = '9';
                   break;
         }
       }
