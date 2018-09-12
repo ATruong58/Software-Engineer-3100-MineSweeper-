@@ -1,6 +1,6 @@
 /*
 Team 17
-Zachary Bax
+Zach Bax
 Edward Koch
 Brandon McCurry
 Alan Truong
@@ -69,7 +69,7 @@ void addNumbers(char b[][BSIZE])
         if(b[x + 1][y - 1] == 'b') numBombs ++;//Top Right Neighbor
         if(b[x + 1][y] == 'b') numBombs ++;//Right Neighbor
         if(b[x + 1][y + 1] == 'b') numBombs ++;//Bottom Right Neighbor
-        //Sets the current Square Equal to the number of bombs arround it
+        //Sets the current Square Equal to the number of bombs around it
         b[x][y] = numBombs;
       }
     }
